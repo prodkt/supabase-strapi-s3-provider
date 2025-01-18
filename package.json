@@ -1,0 +1,54 @@
+{
+  "name": "supabase-s3-strapi-provider",
+  "version": "0.1.0",
+  "private": true,
+  "description": "custom provider for strapi to upload files to supabase s3",
+  "author": {
+    "name": "Bryan Funk",
+    "email": "bryan.funk@prodkt.cloud",
+    "url": "https://prodkt.cloud"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "seed:example": "node ./scripts/seed.js",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "generate:types": "strapi ts:generate-types",
+    "preinstall": "node preinstall.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.731.1",
+    "@aws-sdk/lib-storage": "^3.731.1",
+    "@aws-sdk/s3-request-presigner": "^3.731.1",
+    "@aws-sdk/types": "^3.731.0",
+    "@strapi/plugin-cloud": "5.8.0",
+    "@strapi/plugin-color-picker": "^5.8.0",
+    "@strapi/plugin-documentation": "^5.8.0",
+    "@strapi/plugin-seo": "^2.0.4",
+    "@strapi/plugin-users-permissions": "5.8.0",
+    "upload-aws-s3": "file:providers/upload-aws-s3",
+    "@strapi/strapi": "5.8.0",
+    "fs-extra": "^10.0.0",
+    "mime-types": "^2.1.27",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "strapi-plugin-navigation": "^3.0.5",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x"
+  },
+  "strapi": {
+    "uuid": "aae7ba2c-496b-42ac-9659-2e07b5522848"
+  }
+}
